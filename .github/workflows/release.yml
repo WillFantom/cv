@@ -1,0 +1,33 @@
+name: Release
+
+on:
+  workflow_dispatch:
+  push:
+    tags:
+      - "v*.*.*"
+    paths:
+      - "cv.tex"
+      - "developercv.cls"
+      - "assets/**"
+
+jobs:
+  release-cv-pdf:
+    name: Release CV PDF
+    runs-on: ubuntu-latest
+    container: ghcr.io/willfantom/devcontainer-latex:latest-small
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Tex Packages
+        run: |
+          tlmgr install appendix lipsum ly1 logreq dashrule ifmtarg svg \
+          transparent trimspaces xkeyval textpos clearsans fontaxes titlesec \
+          graphbox fontawesome pgf academicons xhfill moresize raleway \
+          smartdiagram xstring && texhash
+      - name: Build PDF
+        run: pdflatex cv.tex
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: cv.pdf
