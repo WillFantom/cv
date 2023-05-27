@@ -3,7 +3,7 @@
 Looking for somebody who knows computer networks and go/python? Hej 👋
 
 
-➡ **Download my CV:** [here](https://github.com/willfantom/cv/releases/latest/download/cv.pdf) ⬅
+**Download my CV:**    ➡  [here](https://github.com/willfantom/cv/releases/latest/download/cv.pdf)  ⬅
 
 ---
 
