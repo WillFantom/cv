@@ -1,6 +1,6 @@
 # Will Fantom: **CV**    ![GitHub release (latest SemVer)](https://img.shields.io/github/v/tag/willfantom/cv?display_name=tag&label=%20&sort=semver)  ![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/willfantom/cv/release.yml?label=%20&logo=github)
 
-Looking for somebody who knows computer networks and go/python? Hey 👋
+Looking for somebody who knows computer networks and go/python? Hej 👋
 
 
 ➡ **Download my CV:** [here](https://github.com/willfantom/cv/releases/latest/download/cv.pdf) ⬅
